@@ -6,6 +6,18 @@ class ToDoApp extends StatelessWidget {
   const ToDoApp({Key? key}) : super(key: key);
 
   @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'ToDo App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: ContentPage(),
+    );
+  }
+
+  //@override
+
   // COMPLETAR:
   // Debes implementar el metodo build:
   // 1. Crea el metodo build.
